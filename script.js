@@ -100,7 +100,7 @@ blackButton.addEventListener("click", ()=>{
     squares.forEach(square => {
         square.classList.remove('rgb');
         square.classList.remove('grey');
-        square.classList.add('blackSquare');
+        square.classList.add('black');
     });
 })
 
