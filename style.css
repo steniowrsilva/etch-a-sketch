@@ -1,12 +1,73 @@
+body {
+    background-color: grey;
+}
+#content {
+    margin: 0 15vw;
+    height: 100vh;
+    background-color: rgb(92, 219, 92);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+h1 {
+    font-family: cursive;
+    color: white;
+    align-self: center;
+    font-size: 50px;
+}
+
+#buttons {
+    display: flex;
+    margin: 10px 10%;
+    gap: 8px;
+    
+}
+
+button {
+    background-color: brown;
+    color: white;
+    padding: 6px 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    flex: 1;
+}
+
+button:active {
+    background-color: rgb(175, 75, 75);
+}
+
 #container {
-    width: 200px;
-    height: 200px;
+    width: 640px;
+    height: 640px;
+    border: 10px solid brown;
+    margin: 0 auto;
+    background-color: white;
+
     display: flex;
     flex-wrap: wrap;
 }
 
 .square {
-    height: 18px;
-    width: 18px;
+    height: 38px; 
+    width: 38px;
     border: 1px solid black;
+    
+    
+}
+
+.blackSquare {
+    background-color: black;
+}
+
+#settings {
+    display: flex;
+    align-items: center;
+    margin: 10px 10%;
+    gap: 8px;
+    background-color: rgb(58, 122, 58);
+    padding: 8px 12px;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
 }

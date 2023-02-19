@@ -9,11 +9,25 @@
     <script src="script.js" defer></script>
 </head>
 <body>
+    <div id="content">
 
-    <div id="container"></div>
-    <button id="five">5x5</button>
-    <button id="ten">10x10</button>
-    <button id="twenty">20x20</button>
-    <button id="forty">40x40</button>
+        <h1>Etch-a-Sketch</h1>
+
+        <div id="buttons">
+            <button id="chooseGrid">Choose grid</button>
+            <button id="blackButton">Black</button>
+            <button id="rgbButton">Rainbow</button>
+            <button id="greyButton">Darkening grey</button>
+        </div>
+
+        <div id="container"></div>
+
+        <div id="settings">
+            <h4>Choose grid:</h4>
+            <input type="range" value="16" id="gridValues" min="1" max="100">
+            <div id="valuesText"></div>
+        </div>
+
+    </div>
 </body>
 </html>
