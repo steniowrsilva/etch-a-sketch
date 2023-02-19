@@ -42,7 +42,7 @@ button:active {
     height: 640px;
     border: 10px solid brown;
     margin: 0 auto;
-    /* background-color: white; */
+    background-color: white;
 
     display: flex;
     flex-wrap: wrap;
