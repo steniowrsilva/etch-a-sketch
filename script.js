@@ -1,5 +1,6 @@
 let container = document.querySelector('#container');
 let numberOfSquaresPerSide = 16;  //  heightAndWidth = 20;  numberOfSquares = (320/heightAndWidth)**2;
+
 function createSquares (numberOfSquaresPerSide) {
     for (let i=0; i<numberOfSquaresPerSide**2; i++) {
         let square = document.createElement('div');
@@ -26,10 +27,10 @@ function createSquares (numberOfSquaresPerSide) {
                 let newGreyRGB = Math.floor(startingGreyRGB-0.1*(225/2)); // decrease by 10% of rgb(255/2,255/2,255/2)
                 event.target.style.backgroundColor = `rgb(${newGreyRGB},${newGreyRGB},${newGreyRGB})`;
             } else if (square.classList.contains('black')) {
-                // square.style.backgroundColor = 'black';
+                square.style.backgroundColor = '';
                 event.target.classList.add('blackSquare');
             } else {
-                // square.style.backgroundColor = 'black';
+                square.style.backgroundColor = '';
                 event.target.classList.add('blackSquare');
             }
         });
@@ -61,11 +62,11 @@ chooseGrid.addEventListener("click", ()=>{
     })
 })
 
-let gridvalues = document.querySelector('input');
+let gridValues = document.querySelector('input');
 let valuesText = document.querySelector('#valuesText');
-gridvalues.addEventListener('input', ()=>{
-    numberOfSquaresPerSide = gridvalues.value;
-    valuesText.textContent = gridvalues.value;
+gridValues.addEventListener('input', ()=>{
+    numberOfSquaresPerSide = gridValues.value;
+    valuesText.textContent = gridValues.value;
     container.innerHTML = '';
     createSquares(numberOfSquaresPerSide);
     let squares = document.querySelectorAll('.square');
