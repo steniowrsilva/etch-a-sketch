@@ -86,7 +86,6 @@ rgbButton.addEventListener('click', () => {
 })
 
 const greyButton = document.querySelector('#greyButton');
-
 greyButton.addEventListener("click", () => {
     let squares = document.querySelectorAll('.square');
     squares.forEach(square => {
